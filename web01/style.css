@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    overflow: hidden;
+    /* Clear floats */
+}
+
+#banner-placeholder {
+    height: 100px;
+}
+
+.text-container {
+    padding: 10px;
+    /* every class with text-container will have 10px padding. and it'll add on html page */
+}
+
+#banner {
+    background-color: beige;
+    width: 800px;
+    height: 100px;
+    clear: both;
+    position: fixed;
+    top: 0;
+}
+
+#nav {
+    width: 100px;
+    float: left;
+}
+
+ul {
+    padding-left: 0%;
+    list-style-type: none;
+    /* no mark in front of the list, e.g. 1,2,etc. */
+}
+
+li {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+}
+
+li a {
+    display: block;
+    height: 40px;
+    /* display with blocks and have a height in 40px */
+    text-decoration: none;
+    /* delete underline in hyperlink */
+}
+
+li:hover {
+    background-color: cadetblue;
+    /* when mouse hovering, block bg will change color */
+}
+
+#content {
+    background-color: rgb(207, 208, 198);
+    width: 600px;
+    height: 800px;
+    float: left;
+}
+
+section {
+    padding-top: 100px;
+}
+
+#supporting {
+    background-color: rgb(250, 199, 206);
+    width: 100px;
+    float: left;
+
+}
+
+#footer {
+    background-color: rgb(241, 188, 167);
+    width: 800px;
+    height: 50px;
+    clear: both;
+}
