@@ -1,0 +1,15 @@
+html,
+
+.text-container {
+    padding: 10px;
+    /* every class with text-container will have 10px padding. and it'll add on html page */
+}
+
+#banner {
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    clear: both;
+    position: fixed;
+    top: 20;
+}
