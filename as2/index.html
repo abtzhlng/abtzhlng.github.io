@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五區域網頁 - 更新版</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #banner {
+            height: 25vh;
+            background-color: #20c997; /* 藍綠色 (teal) */
+            color: #343a40; /* 深灰色 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        #navigation {
+            height: 80px;
+            background-color: #343a40;
+            color: white;
+            padding-left: 20px;
+        }
+        #navigation a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+        #scene1, #scene2, #scene3 {
+            padding: 50px 0;
+        }
+        .scene-img {
+            width: 100%;
+            height: 300px;
+            background-color: #ff7f50; /* 橘色 */
+            margin-bottom: 20px;
+        }
+        .text-area {
+            max-width: calc(100% - 100px); /* 寬度減少100px，即內縮50px */
+            margin: 0 auto; /* 使文字區域置中 */
+            padding: 20px; /* 內部間距，讓文字不緊貼邊緣 */
+            font-size: 1.1rem;
+            line-height: 1.6;
+            background-color: #f8f9fa; /* 淺色背景，讓文字區域更突出 */
+            border-radius: 8px; /* 圓角增加視覺美感 */
+        }
+    </style>
+</head>
+<body>
+    <!-- #banner -->
+    <div id="banner" class="text-center">
+        這是置頂的 Banner 區域
+    </div>
+
+    <!-- #navigation -->
+    <nav id="navigation" class="d-flex align-items-center">
+        <a href="#scene1">Scene 1</a>
+        <a href="#scene2">Scene 2</a>
+        <a href="#scene3">Scene 3</a>
+    </nav>
+
+    <!-- #scene1 -->
+    <div id="scene1" class="container">
+        <div class="scene-img"></div>
+        <div class="text-area">
+            <h2>Scene 1 標題</h2>
+            <p>這裡是 Scene 1 的文字內容，可以包含大量文字。這段文字可以根據需要來描述一些內容，以便用戶能夠詳細閱讀，讓用戶了解更多的內容或故事。你可以在這裡寫入更多的描述和詳細信息，讓這一區域的內容更加豐富且引人注目。</p>
+        </div>
+    </div>
+
+    <!-- #scene2 -->
+    <div id="scene2" class="container">
+        <div class="scene-img"></div>
+        <div class="text-area">
+            <h2>Scene 2 標題</h2>
+            <p>這裡是 Scene 2 的文字內容，可以包含大量文字。這段文字可以根據需要來描述一些內容，以便用戶能夠詳細閱讀，讓用戶了解更多的內容或故事。你可以在這裡寫入更多的描述和詳細信息，讓這一區域的內容更加豐富且引人注目。</p>
+        </div>
+    </div>
+
+    <!-- #scene3 -->
+    <div id="scene3" class="container">
+        <div class="scene-img"></div>
+        <div class="text-area">
+            <h2>Scene 3 標題</h2>
+            <p>這裡是 Scene 3 的文字內容，可以包含大量文字。這段文字可以根據需要來描述一些內容，以便用戶能夠詳細閱讀，讓用戶了解更多的內容或故事。你可以在這裡寫入更多的描述和詳細信息，讓這一區域的內容更加豐富且引人注目。</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
