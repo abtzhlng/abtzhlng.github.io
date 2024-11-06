@@ -24,4 +24,3 @@ videoSections.forEach((section, index) => {
         }
     });
 });
-
