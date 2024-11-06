@@ -1,0 +1,61 @@
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Section styles */
+.section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Opening, Leading, and Ending sections */
+.opening,
+.leading,
+.ending {
+    height: 200vh;
+}
+
+.opening {
+    background-color: #737ba0;
+}
+
+.leading {
+    background-color: #3d67c9;
+}
+
+.ending {
+    background-color: #a0bae7;
+}
+
+/* Video section styling */
+.video-section {
+    position: relative;
+    height: 100vh;
+    background-color: #222;
+}
+
+/* Video styling */
+video {
+    position: fixed;
+    /* Keeps the video fixed in the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform-origin: center;
+    visibility: hidden;
+    /* Start hidden, show only in video section */
+}
