@@ -1,0 +1,495 @@
+/* opening_sec1 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Serif TC", sans-serif;
+  background-color: #708090;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 18px;
+}
+
+
+h1, h2, h3{
+  margin-top:20px;
+}
+
+
+
+.opening,
+.video1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #708090;
+}
+
+
+.video1 {
+  position: relative;
+  height: 100vh; /* 始終保持 100vh */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box1 {
+  position: absolute;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  max-width: 470px;
+  height: 90px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.top-left {
+  top: 30px;
+  left: 70px;
+}
+
+.bottom-right {
+  bottom: 30px;
+  right: 70px;
+}
+
+.video1 video {
+  width: 50%;
+  height: 60vh;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+/* sec2 */
+/* 影片區樣式 */
+.sec2-video-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  background-color: #708090;
+}
+
+#sec2-scrollVideo {
+  width: auto; /* 讓寬度自適應影片原比例 */
+  height: 60%; /* 設定高度，使影片縮小 */
+  object-fit: contain; /* 確保影片內容不被裁切 */
+  background-color: #708090;
+  pointer-events: none; /* 禁止點擊播放按鈕 */
+  margin-left: 10%; /* 將影片向右稍微調整，模擬靠左對齊 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#sec2-scrollVideoTwo {
+  width: auto; /* 讓寬度自適應影片原比例 */
+  height: 60%; /* 設定高度，使影片縮小 */
+  object-fit: contain; /* 確保影片內容不被裁切 */
+  background-color: #708090;
+  pointer-events: none; /* 禁止點擊播放按鈕 */
+  margin-left: 10%; /* 將影片向右稍微調整，模擬靠左對齊 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sec2-video-text {
+  justify-content: center; /* 文字居中對齊 */
+  align-items: center;
+  color: black;
+  padding: 25px; /* 增加文字框的內邊距 */
+  border-radius: 5px; /* 使文字框的邊角圓滑 */
+  margin: 80px; /* 增加文字框與其他元素的間距 */
+  max-width: 500px; /* 限制文字框的寬度 */
+  text-align: left; /* 文字置中對齊 */
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 用於第二部分影片的樣式 */
+.sec2-video-wrapper.reverse {
+  flex-direction: row-reverse; /* 將文字和影片的順序反轉 */
+}
+
+.sec2-video-wrapper.reverse #sec2-scrollVideoTwo {
+  margin-left: 0; /* 移除左側距離 */
+  margin-right: 8%; /* 與右側的距離相同 */
+}
+
+
+/* sec3 */
+/* 影片背景設定 */
+
+#sec3-video {
+  position: fixed; /* 固定於背景 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* 滿版寬度 */
+  object-fit: cover; /* 填滿視窗 */
+  z-index: -1; /* 影片置於背景最下層 */
+}
+
+/* 文字區塊設定 */
+.sec3-text-overlay {
+  position: relative; /* 文字區塊相對定位 */
+  z-index: 1; /* 文字浮於影片上 */
+}
+
+.sec3-text-section {
+  height: 100vh; /* 每個區塊高度與視窗等高 */
+  display: flex;
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 水平置中 */
+}
+
+.sec3-text-section p {
+  color: black; /* 文字顏色改為黑色 */
+  background-color: white; /* 背景設為白色 */
+  padding: 1rem 2rem; /* 內距 */
+  border-radius: 10px; /* 圓角 */
+  margin: 0; /* 去除預設邊距 */
+  position: relative; /* 相對定位 */
+  right: -20%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* 添加陰影提升視覺效果 */
+  max-width: 30%; /* 限制最大寬度為80% */
+  word-wrap: break-word; /* 當文字過長時換行 */
+  text-align: left; /* 文字左對齊 */
+}
+
+
+
+
+/* interlude */
+#interludepic1{
+  height: 200vh;
+  background-image: url(https://github.com/abtzhlng/abtzhlng.github.io/blob/main/final-term%20images/DSCF3057.JPG?raw=true);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.interlude{
+  font-size:48px;
+  font-weight: bold;
+  color: white;
+  align-content: center;
+  padding-left: 10%;
+}
+
+
+
+/* sec4 */
+
+.sticky-section {
+  position: sticky;
+  top: 0;
+  height: 400vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.flying-text {
+  position: fixed;
+  left: 50%;
+  bottom: calc(500px + 50px);
+  transform: translateX(-50%) translateY(500%);
+  background-color: rgba(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: transform 0.7s ease-out, opacity 0.5s ease-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  opacity: 0;
+  text-align: center;
+  line-height: 40px;
+  max-width: 600px;
+  height: 60px;
+}
+
+.flying-text:first-child {
+  opacity: 1;
+}
+
+.flying-image {
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%) translateY(100%); /* Center and initially hide */
+  width: 1600px;
+  max-height: 800px;
+  object-fit: contain;
+  transition: transform 0.7s ease-out;
+  z-index: 5;
+}
+
+/* sec5 */
+
+/* 外層容器 */
+#sec5-container {
+  position: relative;
+  height: 400vh; /* 滾動區域的高度 */
+  background-color: #f4f4f4;
+}
+
+#sec5-scroll-wrapper {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+  width: max-content; /* 自動根據內容設置 */
+}
+
+#sec5-scroll-wrapper img {
+  height: 100%;
+  width: auto; /* 保持原始比例 */
+  flex-shrink: 0;
+  margin-right: 0;
+}
+
+
+
+/* interlude */
+#interludepic2{
+  height: 200vh;
+  background-image: url(https://github.com/abtzhlng/abtzhlng.github.io/blob/main/final-term%20images/DSCF3057.JPG?raw=true);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.interlude{
+  font-size:48px;
+  font-weight: bold;
+  color: white;
+  align-content: center;
+  padding-left: 10%;
+}
+
+
+
+/* sec6 */
+
+.opinion {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+.opinion-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+.opinion:nth-child(1) .opinion-content,
+.opinion:nth-child(3) .opinion-content {
+  grid-template-columns: 1fr 1fr;
+}
+.opinion:nth-child(2) .opinion-content {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+.opinion:nth-child(2) .opinion-content > * {
+  direction: ltr;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.text-container {
+  display: flex;
+  padding: 60px;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 8%;
+}
+.text-box6 {
+  font-size: 18px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+  width: 580px;
+}
+.text-box6.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .opinion-content {
+    grid-template-columns: 1fr !important;
+    direction: ltr !important;
+  }
+  .opinion-content > * {
+    direction: ltr !important;
+  }
+  .image-container {
+    position: relative;
+    height: auto;
+  }
+}
+
+
+/* interlude */
+#beach{
+  height: 200vh;
+  background-image: url(https://github.com/abtzhlng/abtzhlng.github.io/blob/main/final-term%20images/DSCF3057.JPG?raw=true);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#interludepic1{
+  height: 200vh;
+  background-image: url(https://github.com/abtzhlng/abtzhlng.github.io/blob/main/final-term%20images/DSCF4174.JPG?raw=true);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#interludepic2{
+  height: 200vh;
+  background-image: url(https://github.com/abtzhlng/abtzhlng.github.io/blob/main/final-term%20images/DSCF3104.JPG?raw=true);
+  background-attachment: fixed;
+}
+
+#interludepic2 img{
+height:2780px;
+}
+
+.interlude p{
+  font-size:28px;
+white-space: pre-wrap;
+  font-weight: bold;
+  color: white;
+  padding-left: 0;
+}
+
+.interlude h3{
+  font-size:48px;
+  font-weight: bold;
+  color: white;
+  margin-top:20%;
+  padding-left: 6%;
+}
+
+/* sec7 */
+.policy_box {
+  padding-top: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 400px); /* 每列300px */
+  grid-template-rows: repeat(2, 400px); /* 每行300px */
+  gap: 200px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.flip-box {
+  width: 400px; /* 放大為500px */
+  height: 400px; /* 放大為500px */
+  background-color: transparent;
+  cursor: pointer;
+  perspective: 1000px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index:10
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: #708090;
+  align-content: center;
+  font-weight: 520;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+
+.back {
+  background-color: #e6e8eb;
+  transform: rotateY(180deg);
+  font-size: 18px;
+  color: #00080f;
+  align-content: center;
+  border: 30px solid #e6e8eb;
+  letter-spacing: 1px; 
+}
+
+
+/* footer */
+#footer {
+  height: 30vh;
+  line-height :2;
+  padding-left: 1%;
+  padding-top: 2.8%;
+  color:white;
+  background-color: #708090;
+  white-space: pre-wrap;  
+  z-index:1;
+}
